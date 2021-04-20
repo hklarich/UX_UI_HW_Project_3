@@ -13,11 +13,14 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    
 }
 
 .heroImg {
     height: 1024px;
 }
+
+/*-----------------------------------navigation---------------------------------*/
 
 .navbar {
     margin-left: 50px;
@@ -43,8 +46,12 @@ nav a {
     color: #2C3169;  
 }
 
+
+/*-----------------------------------hero image area---------------------------------*/
+
+
 h1 {
-    text-align: left;
+    text-align: center;
     margin-left: 50px;
     font-family: 'Lato', sans-serif;
     font-size: 64px;
@@ -106,6 +113,49 @@ h2 {
     border-radius: 30px;
 }
 
+.heroGrid {
+    display: grid;
+    padding: 0px;
+    row-gap: 100px;
+    grid-template-rows: 30% auto;
+    grid-template-areas: "b b a"
+                         "b b c"
+                         "b b c";
+    
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.heroGrid a {
+    margin-left: 50px;
+}
+
+
+.heroGrid h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    color: #23A0A6;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.heroGrid p {
+   text-align: left;
+   margin-left: 50px;
+}
+
+/*------------------------------------What We Offer-----------------------------------*/
+
 .cards {
     margin: 50px;
     position: relative;
@@ -118,6 +168,7 @@ h2 {
     padding: 50px;
     row-gap: 100px;
     grid-template-columns: 36% auto;
+
 }
 
 .workGrid-item.item-2a {
@@ -167,9 +218,52 @@ h2 {
     border-radius: 30px;
 }
 
+/*------------------------------------footer-----------------------------------*/
+
 footer {
     background-image: url("images/footer.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
+
+/*------------------------------------Responsive Wed Design-----------------------------------*/
+
+
+@media only screen and (max-width: 600px){
+
+  
+    
+    }
+    
+    .flexContainer {
+        flex-direction: column; 
+  
+    }
+    .flexbox-item {
+        flex-direction: column;
+       
+    }
+
+    .cards {
+        position: relative;
+        top: 20px;
+        margin: 15px;
+    }
+    
+
+    .workGrid-item, .workGrid-img {
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        row-gap: 0px 20px 0px 20px 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item-A"
+        "item-A1"
+        "item-B"
+        "item-B1"
+        "item-C"
+        "item-C1";
+    }
+
+   
+
