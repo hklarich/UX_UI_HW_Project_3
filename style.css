@@ -10,10 +10,12 @@ body {
 
 header {
     background-image: url("images/bridgeBackground.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+    /*background-size: cover;
     
+    background-repeat: no-repeat;
+    width: 100%;*/
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .heroImg {
@@ -52,21 +54,21 @@ nav a {
 
 h1 {
     text-align: center;
-    margin-left: 50px;
     font-family: 'Lato', sans-serif;
     font-size: 64px;
     color: #2C3169;
 }
 
 h3 {
-    margin-top: 50px;
+    margin-top: 58px;
     font-family: 'Lato', sans-serif;
-    font-size: 36px;
+    font-size: 48px;
     color: #23A0A6;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
+    margin-left: 50px;
     font-size: 48px;
     color: #2C3169;
 }
@@ -75,24 +77,9 @@ h2 {
     display: inline-block;
 }
 
-.img {
-    float: left;
-    margin: 50px;
-}
-
-.subh3 {
-    display: inline-block;
-    margin-left: 30% auto;
-}
-
-.heroText {
-    display: inline-block;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 24px;
-}
-
 .btnStart {
     display: block;
+    align-items: flex-end;
     width: 280px;
     height: 44px;
     margin: 20px 50px 20px 50px;
@@ -104,6 +91,7 @@ h2 {
 
 .btnLogin {
     display: block;
+    align-items: flex-end;
     width: 280px;
     height: 44px;
     margin: 20px 50px 20px 50px;
@@ -116,7 +104,7 @@ h2 {
 .heroGrid {
     display: grid;
     padding: 0px;
-    row-gap: 100px;
+    row-gap: 10px;
     grid-template-rows: 30% auto;
     grid-template-areas: "b b a"
                          "b b c"
@@ -130,14 +118,14 @@ h2 {
 
 .b {
     grid-area: b;
+    margin-left: 50px;
 }
 
 .c {
     grid-area: c;
-}
-
-.heroGrid a {
-    margin-left: 50px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 24px;
+    margin-right: 50px;
 }
 
 
@@ -159,7 +147,7 @@ h2 {
 .cards {
     margin: 50px;
     position: relative;
-    top: 48px;
+   
 }
 
 .workGrid {
