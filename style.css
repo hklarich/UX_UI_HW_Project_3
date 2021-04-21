@@ -10,10 +10,10 @@ body {
 
 header {
     background-image: url("images/bridgeBackground.png");
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 1024px;
+     /*width: 100%;
+    height: 1024px;  */
 }
 
 .navbar {
@@ -25,7 +25,7 @@ nav {
 }
 
 nav ul {
-    margin-top: 10px;
+    margin-top: 25px;
     list-style: none;
 }
 
@@ -42,73 +42,27 @@ nav a {
 
 h1 {
     text-align: center;
-    margin-left: 50px;
     font-family: 'Lato', sans-serif;
     font-size: 64px;
     color: #2C3169;
-    padding-top: 0px;
-    margin-top: 10px;
 }
 
 h3 {
+    margin-top: 58px;
     font-family: 'Lato', sans-serif;
-    font-size: 36px;
+    font-size: 48px;
     color: #23A0A6;
-    width: 719px;
-}
-
-p {
-    font-family: 'Varela Round', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 31px;
-    letter-spacing: 0.05em;
-    color: #000000;
-    width: 707px;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
+    margin-left: 50px;
     font-size: 48px;
     color: #2C3169;
-    padding-left: 100px;
-    padding-bottom: 70px;
 }
 
 .header1 {
     display: inline-block;
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 50px;
-}
-
-.globe {
-    display: flex;
-    flex-direction: row;
-}
-
-.subh3 {
-    display: inline-block;
-    margin-left: 30% auto;
-}
-
-.heroText {
-    display: inline-block;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 24px;
-}
-
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-top: 103px;
 }
 
 .btnStart {
@@ -120,10 +74,12 @@ h2 {
     color: #F99510;
     font-size: 24px;
     border-radius: 30px;
+    align-items: flex-end;
 }
 
 .btnLogin {
     display: block;
+    align-items: flex-end;
     width: 280px;
     height: 44px;
     margin: 20px 50px 20px 50px;
@@ -132,6 +88,49 @@ h2 {
     font-size: 24px;
     border-radius: 30px;
 }
+
+.heroGrid {
+    display: grid;
+    padding: 0px;
+    row-gap: 10px;
+    grid-template-rows: 30% auto;
+    grid-template-areas: "b b a"
+                         "b b c"
+                         "b b c";
+    
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+    margin-left: 50px;
+}
+
+.c {
+    grid-area: c;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+
+.heroGrid h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    color: #23A0A6;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.heroGrid p {
+   text-align: left;
+   margin-left: 50px;
+}
+
+
 
 .workGrid {
     display: grid;
@@ -242,10 +241,6 @@ h2 {
     flex-direction: row;
 }
 
-.logo img {
-    padding-top: 200px;
-}
-
 .footer {
     display: flex;
     justify-content: space-around;
@@ -268,6 +263,8 @@ h2 {
     letter-spacing: -0.204545px;
     color: #FFFFFF;
 }
+
+
 
 .icons img {
     padding-right: 15px;
@@ -297,7 +294,7 @@ a {
     letter-spacing: -0.204545px;
     color: #FFFFFF;
     text-decoration: none;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 h6 {
@@ -312,11 +309,17 @@ h6 {
     margin: 0px;
 }
 
+.bird {
+    padding: 0px;
+}
+
 .bottom {
     color: #FFFFFF;
     background-color: #54BBCA;
     font-family: 'Varela Round', sans-serif;
+    padding: 30px;
 }
+
 
 @media only screen and (max-width: 600px) {
     .container {
