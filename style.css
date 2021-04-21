@@ -5,24 +5,16 @@ body {
 
 .container {
     width: 80%;
-    margin: 0 auto 
+    margin: 0 auto
 }
 
 header {
-    background-image: url("images/bridgeBackground.png");
-    /*background-size: cover;
-    
+    background-image: url("images/bridge.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;*/
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.heroImg {
+    width: 100%;
     height: 1024px;
 }
-
-/*-----------------------------------navigation---------------------------------*/
 
 .navbar {
     margin-left: 50px;
@@ -45,41 +37,82 @@ nav li {
 nav a {
     text-decoration: none;
     font-size: 20px;
-    color: #2C3169;  
-}
-
-
-/*-----------------------------------hero image area---------------------------------*/
-
-
-h1 {
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 64px;
     color: #2C3169;
 }
 
-h3 {
-    margin-top: 58px;
+h1 {
+    text-align: center;
+    margin-left: 50px;
     font-family: 'Lato', sans-serif;
-    font-size: 48px;
+    font-size: 64px;
+    color: #2C3169;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
     color: #23A0A6;
+    width: 719px;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    width: 707px;
 }
 
 h2 {
     font-family: 'Lato', sans-serif;
-    margin-left: 50px;
     font-size: 48px;
     color: #2C3169;
+    padding-left: 100px;
+    padding-bottom: 70px;
 }
 
 .header1 {
     display: inline-block;
 }
 
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.globe {
+    display: flex;
+    flex-direction: row;
+}
+
+.subh3 {
+    display: inline-block;
+    margin-left: 30% auto;
+}
+
+.heroText {
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 24px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 103px;
+}
+
 .btnStart {
     display: block;
-    align-items: flex-end;
     width: 280px;
     height: 44px;
     margin: 20px 50px 20px 50px;
@@ -91,7 +124,6 @@ h2 {
 
 .btnLogin {
     display: block;
-    align-items: flex-end;
     width: 280px;
     height: 44px;
     margin: 20px 50px 20px 50px;
@@ -101,74 +133,28 @@ h2 {
     border-radius: 30px;
 }
 
-.heroGrid {
-    display: grid;
-    padding: 0px;
-    row-gap: 10px;
-    grid-template-rows: 30% auto;
-    grid-template-areas: "b b a"
-                         "b b c"
-                         "b b c";
-    
-}
-
-.a {
-    grid-area: a;
-}
-
-.b {
-    grid-area: b;
-    margin-left: 50px;
-}
-
-.c {
-    grid-area: c;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 24px;
-    margin-right: 50px;
-}
-
-
-.heroGrid h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 32px;
-    color: #23A0A6;
-    text-align: left;
-    margin-left: 50px;
-}
-
-.heroGrid p {
-   text-align: left;
-   margin-left: 50px;
-}
-
-/*------------------------------------What We Offer-----------------------------------*/
-
-.cards {
-    margin: 50px;
-    position: relative;
-   
-}
-
 .workGrid {
     display: grid;
     justify-content: space-evenly;
-    padding: 50px;
-    row-gap: 100px;
+    padding: 30px;
+    row-gap: 150px;
     grid-template-columns: 36% auto;
+}
 
+.workGrid img {
+    padding-right: 50px;
 }
 
 .workGrid-item.item-2a {
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .workGrid-item.item-2b {
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .workGrid-item.item-2c {
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .workGrid-item h3 {
@@ -179,7 +165,7 @@ h2 {
 }
 
 .workGrid-item p {
-   text-align: left;
+    text-align: left;
 }
 
 .learnMore {
@@ -194,64 +180,167 @@ h2 {
     border-radius: 30px;
 }
 
-.download {
+.download a {
     margin-top: 50px;
     width: 280px;
     height: 44px;
-    border: 2px solid #2C3169;
-    background-color: white;
-    color: #1C6A98;
-    justify-content: end;
+    /* border: 2px solid #2C3169;
+            background-color: white;
+            color: #1C6A98;
+            font-size: 24px;
+            border-radius: 30px; */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     font-size: 24px;
-    border-radius: 30px;
+    line-height: 31px;
+    color: #1C6A98;
 }
 
-/*------------------------------------footer-----------------------------------*/
+.download {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/* footer {
+            background-image: url("images/footer.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+        
+        .middle {
+            display: flex;
+            flex-direction: row;
+        } */
 
-footer {
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom a {
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: white;
+    text-decoration: none;
+    padding-right: 150px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    padding-top: 200px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
     background-image: url("images/footer.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
 }
 
-/*------------------------------------Responsive Wed Design-----------------------------------*/
+.footer ul {
+    list-style-type: none;
+    align-items: center;
+    padding-inline-start: 0px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+}
 
+.icons img {
+    padding-right: 15px;
+    padding-top: 10px;
+}
 
-@media only screen and (max-width: 600px){
+.li {
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-  
-    
+.menu li,
+a {
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+h6 {
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.231818px;
+    color: #FFFFFF;
+    padding-top: 100px;
+    margin: 0px;
+}
+
+.bottom {
+    color: #FFFFFF;
+    background-color: #54BBCA;
+    font-family: 'Varela Round', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 400px;
     }
-    
-    .flexContainer {
-        flex-direction: column; 
-  
-    }
-    .flexbox-item {
+    .name {
+        display: flex;
         flex-direction: column;
-       
+        padding-right: opx;
+        width: 400px;
+        justify-content: center;
     }
-
+    .button {
+        display: flex;
+        flex-direction: column;
+    }
     .cards {
-        position: relative;
-        top: 20px;
-        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
     }
-    
-
-    .workGrid-item, .workGrid-img {
-        grid-template-rows: 300px 300px 300px 300px 300px 300px;
-        row-gap: 0px 20px 0px 20px 0px;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "item-A"
-        "item-A1"
-        "item-B"
-        "item-B1"
-        "item-C"
-        "item-C1";
+    p {
+        width: 400px;
+        margin: 0px;
     }
-
-   
-
+    ;
+}
